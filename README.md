@@ -11,14 +11,14 @@ https://www.sus.ac.jp/topics/20200811-1/
 
 <h3>predictions014.py</h3>
 学習済みのモデルとデータをもとに2時間後の河川の水位を予測するプログラム<br>
-A program to predict the water level of a river in 2 hours based on trained models and data
+A program to predict the water level of a river in 2 hours based on trained models and data.
 
 <h3>WL014_new_data_train_add_noise.py</h3>
 予測で使用するモデルを訓練するプログラム<br>
-A program to train models to be used in forecasting
+A program to train models to be used in forecasting.
 
 <h3>search_by_optuna.ipynb</h3>
 ハイパーパラメータを捜索するプログラム<br>
-program to search for hyperparameters
+program to search for hyperparameters.
 
 
