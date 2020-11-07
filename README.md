@@ -19,6 +19,6 @@ A program to train models to be used in forecasting.
 
 <h3>search_by_optuna.ipynb</h3>
 ハイパーパラメータを捜索するプログラム<br>
-program to search for hyperparameters.
+A program to search for hyperparameters.
 
 
