@@ -1,28 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-# In[34]:
-
-
 # ファイルナンバリング
 number  = 'model002'
 
-
-# # 【データの加工と学習】
-
-# ## データの加工
-
-# In[35]:
-
-
-# 警告(worning)の非表示化
 import warnings
 warnings.filterwarnings('ignore')
-
-
-# ### import
-
-# In[36]:
-
 
 import pandas as pd
 import keras
