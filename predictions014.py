@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
 import numpy as np
 from matplotlib import pyplot as plt
 import keras
@@ -112,8 +108,6 @@ def predict(signum, frame):
     # データを補正
     final_value = fix(data_latest, result[0][0])    
     
-    
-    # print(now_date, '  ', last_date, ' → ', predicted_date, '  ', result[0][0])
     print(now_date, '  ', last_date, ' → ', predicted_date, '  ', final_value, '(', result[0][0], ')')
     
     # csvファイルに結果を追記
