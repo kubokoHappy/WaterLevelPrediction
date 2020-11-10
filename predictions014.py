@@ -23,11 +23,11 @@ def main():
 
 
 
-stay_count = 0
+stay_count = 0  # 安定的な値をカウント
 doun_count = 0  # 連続で下がる値をカウント
 pre_tmp = 0  # 予測値の初期値
 
-def fix(data_latest, result, stay_count_limit=1, doun_count_limit=3, stay_diff=0.0001):
+def fix(data_latest, result, stay_count_limit=10, doun_count_limit=10, stay_diff=0.0001):
     
     global stay_count
     global doun_count
@@ -46,8 +46,8 @@ def fix(data_latest, result, stay_count_limit=1, doun_count_limit=3, stay_diff=0
         doun_count = 0  # カウンタをリセット
     pre_tmp = result  # pre_tmp を更新
     
-    if  (stay_count > stay_count_limit):  # doun_count　がリミットを越した場合
-        final_value = data_latest      # final_value を shift12_stack に変更
+    if  (stay_count > stay_count_limit):  # stay_count　がリミットを越した場合
+        final_value = data_latest      # final_value を shift12_stack に変更(安定している場合、2時間前の値をそのまま出力)
     
     return final_value
   
