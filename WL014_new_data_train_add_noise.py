@@ -156,19 +156,7 @@ while True:
         )
     ]
 
-    # ### LSTMのモデルの訓練と評価
-    model = Sequential()
-    model.add(layers.LSTM(hl1,
-                        recurrent_dropout=recurrent_dropout1,
-                        return_sequences=True,
-                        input_shape=(None, np_data.shape[-1])))
-    model.add(layers.LSTM(hl2,
-                        recurrent_dropout=recurrent_dropout2,
-                        return_sequences=False))
-    model.add(layers.Dense(1))
-
-    batch_input_shape = (batch_size, lookback, np_data.shape[-1])
-
+    
     model = Sequential()
     model.add(layers.LSTM(hl1,
                         #recurrent_dropout=recurrent_dropout1,
